@@ -26,16 +26,16 @@ public class JSONActivity extends Activity {
     }
 
     public void conectar(View v){
-        new DownloadFromOpenWeather().execute();
+        new DownloadFromOmbBapi().execute();
     }
 
-    private class DownloadFromOpenWeather extends AsyncTask<Void, Void, String> {
+    private class DownloadFromOmbBapi extends AsyncTask<Void, Void, String> {
 
         @Override
         protected String doInBackground(Void... params) {
             HttpURLConnection urlConnection = null;
             try {
-                URL url = new URL("http://api.openweathermap.org/data/2.5/forecast/daily?q=Curitiba&mode=json&units=metric&cnt=1&appid=440b84a8027be4fcf90f9b83e4b45aa9");
+                URL url = new URL("http://www.omdbapi.com/?t=Dexter&Season=1");
 
                 urlConnection = (HttpURLConnection) url.openConnection();
                 urlConnection.setRequestMethod("GET");
