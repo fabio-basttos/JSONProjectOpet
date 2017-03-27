@@ -13,7 +13,7 @@
 
     <Button
         android:onClick="loadJSON"
-        android:text="Carregar"
+        android:text="Carregar Banda"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:id="@+id/button"
@@ -23,7 +23,7 @@
 
     <Button
         android:onClick="novaTela"
-        android:text="Nova Tela"
+        android:text="Dexter 1 temporada"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:id="@+id/buttonJSON"
